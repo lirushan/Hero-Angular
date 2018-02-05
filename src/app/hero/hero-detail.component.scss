@@ -1,0 +1,20 @@
+
+/*删除按钮*/
+.deleted{
+  display: block;
+  background-color: #607D8B;
+  color: #ddd;
+  border-radius: 40%;
+  position: relative;
+  width: 3em;
+  height: 1.7em;
+  padding: .1em .5em;
+  font-size: 12px;
+  cursor: pointer;
+
+}
+
+.deleted:hover{
+  background-color: #BBD8DC;
+  color:#444;
+}
