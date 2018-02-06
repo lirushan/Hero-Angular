@@ -18,3 +18,14 @@
   background-color: #BBD8DC;
   color:#444;
 }
+
+label{
+  color: #607D8B;
+  font-weight: bold;
+}
+
+button:hover{
+  position: relative;
+  left: .1em;
+  cursor: pointer;
+}

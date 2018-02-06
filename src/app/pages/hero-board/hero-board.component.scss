@@ -1,0 +1,28 @@
+.board-module{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero{
+  background-color: #607D8B;
+  color: #eeeeee;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 24%;
+  min-height: 120px;
+
+  // 设置文字水平,垂直居中对齐
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.hero:hover{
+  background-color: #fff;
+  color: #607d8b;
+}

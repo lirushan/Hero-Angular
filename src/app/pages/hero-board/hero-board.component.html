@@ -1,0 +1,7 @@
+<h2 class="h2_lrs">仪表盘</h2>
+
+<div class="board-module">
+  <div *ngFor="let hero of heroes" class="hero" [routerLink]="['/detail', hero.id]">
+      <h4>{{hero.name}}</h4>
+  </div>
+</div>

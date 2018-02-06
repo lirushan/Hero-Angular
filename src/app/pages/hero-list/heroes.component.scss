@@ -1,0 +1,51 @@
+.heroes{
+  /*设置列表样式*/
+  list-style-type: none;
+  width: 20em;
+  /*margin: 0 0 2em 0;*/
+}
+
+.heroes li{
+  position: relative;
+  cursor: pointer;
+  background-color: #999;
+  margin: 0.5em;
+  height: 2.0em;
+  padding: .3em 0;
+  border-radius: 4px;
+}
+
+.heroes .badge{
+  display: inline-block;
+  position: relative;
+  /*top left 是配合 position 使用的*/
+  top: -5px;
+  left: 0;
+  color: white;
+  background-color: #607D8B;
+  /*width height 是配合 display:block 元素使用的*/
+  height: 2.7em;
+  width: 2.7em;
+  border-radius: 4px 0 0 4px;
+  padding: .8em;
+  margin-right: 1.8em;
+}
+
+.heroes li:hover{
+  /*字体颜色*/
+  color: #607D8B;
+  left: .2em;
+  background-color: #ddd;
+}
+
+/*鼠标点击后的样式: 鼠标点击之后再把这个样式加载到标签上*/
+.heroes li.selected:hover{
+  background-color: #BBD8DC !important;
+  color: white;
+}
+
+button:hover{
+  position: relative;
+  left: .1em;
+  cursor: pointer;
+}

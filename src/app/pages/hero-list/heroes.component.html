@@ -1,0 +1,17 @@
+  <!--<h1 class="personal-title">{{title}}</h1>-->
+  <!--<button class="btn btn-sm btn-secondary">英雄板</button>-->
+  <!--<button class="btn btn-sm btn-secondary">技能板</button>-->
+  <!--<button class="btn btn-sm btn-secondary">物品板</button>-->
+  <!--英雄列表-->
+  <h2 class="h2_lrs">英雄列表</h2>
+  <ul class="heroes">
+    <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelectedHero(hero)">
+      <span class="badge">{{hero.id}}</span>{{hero.name}}
+    </li>
+  </ul>
+
+<!--<hero-detail [hero]="selectedHero"></hero-detail>-->
+<div *ngIf="selectedHero">
+  <h2 class="h2_lrs">我的英雄：{{selectedHero.name}}</h2>
+  <button class="btn btn-sm btn-secondary" (click)="gotoDetail()">英雄详情</button>
+</div>

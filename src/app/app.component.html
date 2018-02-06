@@ -1,15 +1,17 @@
 <div class="container jumbotron">
   <h1 class="personal-title">{{title}}</h1>
-  <button class="btn btn-sm btn-secondary">英雄板</button>
-  <button class="btn btn-sm btn-secondary">技能板</button>
-  <button class="btn btn-sm btn-secondary">物品板</button>
-  <!--英雄列表-->
-  <h2>英雄列表</h2>
-  <ul class="heroes">
-    <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelectedHero(hero)">
-      <span class="badge">{{hero.id}}</span>{{hero.name}}
-    </li>
-  </ul>
+  <nav>
+    <button class="btn btn-sm btn-secondary" routerLink="/hero-board">枭雄板</button>
+    <button class="btn btn-sm btn-secondary" routerLink="/heroes">英雄板</button>
+    <button class="btn btn-sm btn-secondary">技能板</button>
+    <button class="btn btn-sm btn-secondary">物品板</button>
+  </nav>
 
-<hero-detail [hero]="selectedHero"></hero-detail>
+  <router-outlet></router-outlet>
 </div>
+
+
+<!--1、添加路由模块-->
+<!--2、导入路由模块-->
+<!--3、添加 <router-outlet></router-outlet> 位置-->
+<!--4、在html中添加路由跳转路径-->

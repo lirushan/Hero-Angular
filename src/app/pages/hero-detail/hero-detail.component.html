@@ -2,7 +2,7 @@
 <!--英雄详情-->
 <div *ngIf="hero">
   <div style="display: flex; align-items: center;">
-    <h2 style="margin-right: 1.8em;">英雄资料: {{hero.name}} </h2> <span class="deleted" (click)="clearHero()">关闭</span>
+    <h2 class="h2_lrs" style="margin-right: 1.8em;">英雄资料: {{hero.name}} </h2> <span class="deleted" (click)="clearHero()">关闭</span>
   </div>
   <div class="form-inline">
     <label class="col-sm-1">id: </label>
@@ -14,7 +14,8 @@
   </div>
   <div class="form-inline margin-up-down-10">
     <label class="col-sm-1">skill: </label>
-    <!--<input class="form-control col-sm-2" [(ngModel)]="hero.skill" placeholder="skill">-->
+    <!--<input class="form-control col-sm-2" [(ngModel)]="hero-detail.skill" placeholder="skill">-->
     {{hero.skill}}
   </div>
+  <button class="btn btn-secondary btn-sm" (click)="goBack()">后退</button>
 </div>
